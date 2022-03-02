@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --color0:#ebe5c5;
+    --color1:#83e1ad;
+    --color2:#3ddc84;
+    --color3:#2fa866;
+    --color4:#1a5c37;
+    --color5:#063d1e;
+    --font-padrao: arial, helvetica, tahoma, sans-serif;
+    --font-principal:'Android';
+    --font-destaque:'Bebas Neue';
+}
+body{
+    font-family:var(--font-padrao);
+    font-weight: normal;
+    background-color:aliceblue  ;
+    
+
+}
+header{
+    
+    background-image: linear-gradient( #2fa866, #063d1e);
+    height: 200px;
+}
+header > h1{ 
+    
+    font-family: var(--font-destaque);
+    color: #ffff;
+    text-align: center;
+    font-size:60px;
+    padding-top:70px;
+    font-weight: normal;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+}
+header > p{
+    color: var(--color0) ;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--font-padrao);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    
+    
+ 
+}
+nav{
+    background-color: #063d1e;
+    height: 40px;
+    padding-top: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.384);
+        
+}
+nav a{
+    color: #ffff;
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    
+    padding: 8px;
+    
+}
+nav a:hover{
+    background-color: #2fa8655e;
+    border-radius: 7px;
+}
+
+main{
+    
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    background-color:white;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 30px;
+}
+main a{
+    background-color: #2fa8658f;
+    padding: 4px;
+    color: #063d1e;
+    font-weight: bold;
+    text-decoration: none;
+}
+main a::after{
+    content: '\1F517\00A0';
+}
+main strong{
+    color: #063d1e;
+}
+div.video{
+    
+    margin: 0px -20px 20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video >iframe{
+    top: 5%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+aside{
+        background-color: #2fa86588;
+        
+        border-radius: 10px;
+}
+aside p{
+    padding: 8px;
+
+}
+aside h3{
+    color: #ffff;
+    background-color: hsl(146, 82%, 13%);
+    padding: 20px;
+
+    border-radius: 10px 10px 0px 0px;
+
+}
+aside ul{
+    list-style-position: inside;
+    line-height: 2em;
+    columns: 2;
+    padding: 20px;
+    list-style:'\2714\00A0';
+}
+ img{
+    width: 100%;
+    
+   
+}
+.Thebug{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+main h1{
+    
+    font-family: var(--font-principal);
+    padding: 20px;
+    
+    font-size: 1.8em;
+
+    color: #063d1e;
+    
+}
+main h2{
+    font-family: var(--font-principal);
+    padding: 10px;
+    color: #1a5c37;
+}
+main p{
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+footer strong{
+    color: white;
+
+}
+footer p{
+    font-size: 1.3em;
+    padding: 10px
+}
+footer{
+    background-color: #063d1e;
+    color: #ebe5c5;
+    height:50px;
+   text-align: center;
+
+}
+@media (max-width:700px){
+    main{
+        max-width: 1000px;
+        min-width: 200px;
+    }
+    main h1{
+        font-size: 18px;
+    }
+    main h2{
+        font-size: 18px;
+    }
+    main p{
+        line-height: 1.9em;
+    }
+    aside ul{
+        columns: 1;
+        
+    }
+    header{
+        width: 100%;
+        
+    }
+    header h1{
+        font-size: 2em
+    }
+    header p{
+        font-size: 1em;
+        margin: 10px;
+    }
+   nav{
+       text-align: center;
+
+
+       
+   }
+    nav a{
+        
+        font-size: 14px;
+        padding: 7px;
+        
+    }
+  
+   nav a.FL{
+    display: none;
+   }
+   .Thebug{
+       display: block;
+       margin: auto;
+       width: 200px;
+       height: 200px;
+      }
+    
+      footer{
+          text-align: center;
+          height: 70px;
+      }
+      
+   
+}
+   
